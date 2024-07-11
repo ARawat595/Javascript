@@ -14,6 +14,10 @@
 // 7) symbol => unique
 
 
+//object
 
+console.log(typeof "ankush");
+console.log(typeof null);//object
+console.log(typeof undefined);//undefined
     
 
