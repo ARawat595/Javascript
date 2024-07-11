@@ -8,6 +8,16 @@ accountCity="jaipur"
 accountEmail="@agmail.com"
 accountPassword="86745"
 
+let accounState; //this will give undefined as
 console.log(accountId);
 
 console.table([accountId,accountEmail,accounPassword,accountCity])
+
+/* 
+{
+This is scope
+}
+
+prefer not to use var 
+because of issue in block scope and functional scope 
+*/
