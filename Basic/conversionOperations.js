@@ -26,3 +26,20 @@ let someNumber = 33
 let stringNumber=String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+//******************Opeartions********************
+
+let value =3
+let negValue= -value
+console.log(negValue);
+
+
+console.log("1" + 2);//output will be 12
+console.log(1 + "2");//output will be 12
+console.log("1" + 2 + 2);// output 122 first is String so  everything will be converted to string
+console.log(1 + 2 + "1");//output 32 first is Number so  everything will be converted to number
+
+
+console.log(+true);
+console.log("");
+
