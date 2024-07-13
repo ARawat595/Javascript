@@ -41,3 +41,33 @@ console.log(typeof myObj);//object
 //Javascript has dynamically typed language and from one point of view, it is good because it’s pretty simple to assign values to the variables
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+//******************* Memory Allocation******************************* */
+
+// Stack(Primitive) => In Stack we get copy of variable declared making changes will not make change in original value
+//Example of stack
+
+let myYoutubename = "ankush@rawat";
+let anotherName = myYoutubename;
+
+
+anotherName = "rawat@youtube.com"
+console.log(myYoutubename);//ankush@rawat
+console.log(anotherName);//rawat@youtube.com
+
+//Heap(Non-Primitive) =>In Heap we get reference of original value defined of an object so making changes will occur in original value as well
+
+//Example of Heap
+
+let myOject ={
+    email :"ankushr546@gmail.com",
+    upi:"rawat@ybl"
+}
+
+let newObject = myObj;
+newObject.email= "ankushr889@gmail.com";
+console.log(myObj.email);// will give "ankushr889@gmail.com"
+console.log(newObject.email);//will give "ankushr889@gmail.com"
