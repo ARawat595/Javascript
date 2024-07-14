@@ -38,7 +38,12 @@ console.log(typeof myFunction);//function
 console.log(typeof outsideTemp);//object
 console.log(typeof myObj);//object
 
-//Javascript has dynamically typed language and from one point of view, it is good because it’s pretty simple to assign values to the variables
+//Javascript has dynamically typed language and from one point of view, it is good because it’s
+// pretty simple to assign values to the variables
+
+//beacuse we can assign differently values to same variable beacuse we assign value to the variable “a” without specifying its type and type of the variable will be set dynamically depending on the value that we assigned to the variable.
+/*   a = "abc";  //String
+     a = 10;  //Number
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
