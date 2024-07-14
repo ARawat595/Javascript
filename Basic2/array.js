@@ -20,9 +20,9 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.pop()//delete from end of array
 
 // myArr.unshift(9)//add the value 9 at the begining of array
-// myArr.shift()// remove the array element from the end of array
+myArr.shift()// remove the array element from the begining of array
 
-// console.log(myArr);
+console.log(myArr);
 
 // console.log(myArr.includes(9));//gives boolean result true/false
 // console.log(myArr.indexOf(19));//gives -1 if value is greater than array
