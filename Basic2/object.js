@@ -46,7 +46,7 @@ JsUser.greet = function(){
 }
 
 JsUser. greettwo= function(){
-    console.log(`Hello JS user, ${this.name}`); //here this refers to object and .key  to access
+    console.log(`Hello JS user, ${this.name}`); //here we use backtakes (``) which is called string interpolation this refers to object and .key  to access 
 }
 console.log(JsUser.greet);//function is not executed, it returns function reference[Function (anonymous)]
 console.log(JsUser.greet());//prints hello javascript
