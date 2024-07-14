@@ -8,7 +8,7 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 // const gameName = new String('ankush-hc-com')
 const gameName = new String('The morning is upon us.')
 
-console.log(gameName[0]);
+console.log(gameName[0]);//prints T
 console.log(gameName.__proto__);//prints {}
 
 
@@ -25,7 +25,7 @@ console.log(anotherString);
 
 // const newStringOne = "   hitesh    "
 // console.log(newStringOne);
-// console.log(newStringOne.trim());
+// console.log(newStringOne.trim());//it will trim the empty space from the string
 
 
 const url = "https://hitesh.com/hitesh%20choudhary"
