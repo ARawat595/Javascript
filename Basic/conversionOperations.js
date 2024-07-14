@@ -37,7 +37,8 @@ console.log(negValue);// prints -3
 console.log("1" + 2);//output will be 12
 console.log(1 + "2");//output will be 12
 console.log("1" + 2 + 2);// output 122 first is String so  everything will be converted to string
-console.log(1 + 2 + "1");//output 32 first is Number so  everything will be converted to number
+console.log(1 + 2 + "1");//output 31 first is Number so  everything will be converted to number
+console.log(1 +"2" + 1);//output 121 
 
 
 console.log(+true);//prints 1 for true
