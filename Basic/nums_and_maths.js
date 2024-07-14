@@ -6,7 +6,7 @@ const balance = new Number(100)
 
 // console.log(balance.toString());//converted to string
 // console.log(balance.toString().length);//prints 3 as converted to string and 100 has 3 character
-// console.log(balance.toFixed(1));
+console.log(balance.toFixed(1));//prints 1 digit after decimal output is 100.0
 
 const otherNumber = 123.8966
 
