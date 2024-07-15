@@ -10,7 +10,7 @@ function sayMyName(){
 }
 // sayMyName()//here sayMyName is reference and when we add parenthesis() it becomes execution 
 
-// function addTwoNumbers(number1, number2)//whatever passes in function definition is called parameters
+// function addTwoNumbers(number1, number2)//whatever passed in function definition is called parameters
 // {
 
 //     console.log(number1 + number2);
