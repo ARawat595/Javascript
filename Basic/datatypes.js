@@ -1,6 +1,6 @@
 "Use Strict"; //treat all Js code as newer version
 
-//alert(3+3) //throw error as we are using nodejs, not browser
+//alert(3+3) //throw error as we are using nodejs, not browser() 
 
 
 
