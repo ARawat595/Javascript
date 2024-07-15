@@ -25,7 +25,7 @@ const user = {
 //+++++++++One Way ++++
  
 //  function chai(){
-//     console.log(this);//when we print this inside any function in node environment we get multiple values
+//     console.log(this);//when we print this inside simple function in node environment we get multiple values
 // }
 // chai()
 
@@ -45,22 +45,30 @@ const user = {
 
 //***Arrow Function declaration ******* */
 
-const chai =  () => {
-    let username = "hitesh"
-    console.log(this);//if we print only this keyword inside function it 
-}
+//Syntax of arrow function () => {}
 
-chai()
+// const chai =  () => {
+//     let username = "hitesh"
+//     console.log(this);//if we log (only) this keyword inside arrow function (will give current context as => {} which is empty object ) 
+//     console.log(this.username);//will give same (Undefined)
+// }
+// chai()
+
+//Note: This keyword is not used inside any funtion
 
 // const addTwo = (num1, num2) => {
-//     return num1 + num2
+//     return num1 + num2//this is explicitly return where using return keyword
 // }
 
+// console.log(addTwo(3, 4)) //will give 
 // const addTwo = (num1, num2) =>  num1 + num2
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => num1 + num2  //this is also arrow function using implicit return we dont use curly-braces { } and return keyword bcz we are assuming we have one line statement
+// const addTwo = (num1, num2) => (num1 + num2) //this is also implicit return using parenthesis 
 
-// const addTwo = (num1, num2) => ({username: "hitesh"})
+//Note: in above if curly-braces { } are used we must have to write return keyword  
+
+// const addTwo = (num1, num2) => ({username: "hitesh"})//if we want to return object we to apply parenthesis outside the Curly braces {} , if only curly braces are used it will give undefined in case of returning object 
 
 
 // console.log(addTwo(3, 4))
