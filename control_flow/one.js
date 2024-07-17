@@ -1,3 +1,6 @@
+//Every time we dont want to exceute the entire code so we use control flow to run specific code only that is needed to be exceuted
+
+
 //*********If statement******* */
 const isUserloggedIn = true
 const temperature = 41
