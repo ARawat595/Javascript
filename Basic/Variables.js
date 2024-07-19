@@ -19,6 +19,6 @@ This is scope
 }
 
 prefer not to use var 
-because of issue in block scope and functional scope 
-because javscript support functional scope
+because of issue in block scope and global scope value get overridden
+
 */
