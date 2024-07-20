@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<!-- <script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);//we get all days 
+
+    //***********().children property)**********
+
+    // console.log(parent.children);//we get HTML collection using (.children)
+    // console.log(parent.children[1]);//prints complete div which represent tuesday
+    //console.log(parent.children[1].innerHTML);//prints only tuesday
+
+    //since we cannot apply forEach we have to first convert it in an array but we can apply normal for loop
+
+    // for (let i = 0; i < parent.children.length; i++)//since parent does not give us HTML collection its (parent.children) which is giving us HTML collection
+     {
+    //      console.log(parent.children[i].innerHTML);//prints all days
+        
+    // }
+    parent.children[1].style.color = "orange"//apply style to first element
+
+    //***********.firstElementChild property**********
+    // console.log(parent.firstElementChild);//will print Monday
+    // console.log(parent.lastElementChild);//will print Thursday
+
+    const dayOne = document.querySelector('.day')//we can select element using querySelector bcz it takes the first element
+    // console.log(dayOne);//will give Monday
+    // console.log(dayOne.parentElement);//will give complete parent element <div class==parent?
+    // console.log(dayOne.nextElementSibling);//will print tuesday as comes after monday
+
+    console.log("NODES: ", parent.childNodes);//it will give NodeList(11) because DOM is tree like structure and it counts the (line break/next line)and also count comment and its next line as well
+</script>
+ </html>
