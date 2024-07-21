@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //This is not optimized approach as tree has to traverse completely from top to bottom for adding every time 
+    function addLanguage(langName){//we have create a function to add a listinng item
+        const li= document.createElement("li")//created li using createElement
+        li.innerHTML=`${langName}`//adding language name using innerHTML//by using innerHTML we have to traverse completely
+        document.querySelector(".language").appendChild(li)//now we have selected where we have to add that element using querySelector and appendchild into it
+    }
+    addLanguage("python")//now we have passed argument inside function
+    addLanguage("typescript")
+
+    //this is well optimized approach
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))//this is optimized because now we dont have to traverse tree here we are directly inserting using textnode
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //now we have to Edit any value
+    const secondLang = document.querySelector("li:nth-child(2)")//nth child is used to select particular value passing its number
+    console.log(secondLang);//complete python li is selected(<li>Python</li>)
+    //secondLang.innerHTML = "Mojo"// will print like this <li>Mojo</li
+    const newli = document.createElement('li')//created new li which we want to add
+    newli.textContent = "Mojo"//added value inside li using textContent
+    secondLang.replaceWith(newli)//now replace the old value with new value using replaceWith beacuse we have the reference //in above case we didnt have the reference that's why we have selected class using queryselector nd all
+
+    //edit example second
+    const firstLang = document.querySelector("li:first-child")//here first-child will directly select that value
+    firstLang.outerHTML = '<li>TypeScript</li>'//by using outerhtml we have to pass complete outerHTML like this 
+
+    //remove a value 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()//by using .remove we can simply remove the value
+
+
+</script>
+</html>
