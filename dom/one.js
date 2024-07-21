@@ -6,7 +6,7 @@
 
 //This is way to get attribute
 
-// we can access title elements (document.getElementById('title').id) like this will value of id
+// we can access title elements (document.getElementById('title').id) like this will give value of id
 //(document.getElementById('title').className)// will give class name(heading)
 //(document.getElementById('title').getAttribute('id')) // title 
 //(document.getElementById('title').getAttribute('class'))// heading
@@ -31,7 +31,7 @@
 // document.querySelector('h2') this will give the first (h2) of the document
 // document.querySelector('#title') // to select an id 
 // document.querySelector('.heading')// to select a class
-// document.querySelector('input[type ="password"]')// to select a class
+// document.querySelector('input[type ="password"]')// to select a input type
 
 //************Applying on unordered list for an individual element*********
 /*const myul = document.querySelector('ul')
@@ -60,7 +60,7 @@ turnBlue.innerText="fourty" // we can apply more styling*/
 //2=> In HTML Collection we do not have any looping so we have to first convert it into array then access its values  see below example 
 
 // Another way of accessing using classname(getElementsByClassNam)
-//const tempLiClassName = document.getElementsByClassName(".list-item")
+//const tempLiClassName = document.getElementsByClassName("list-item")
 /*Since this give (HTML collection) so in its prototype we dont have ay loop */
 //const MyConArray = Array.from(tempLiClassName)// this (Array.from) will convert it into array
 //MyConArray.forEach(function(li){
